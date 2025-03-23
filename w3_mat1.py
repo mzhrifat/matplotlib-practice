@@ -33,7 +33,7 @@ plt.title("Multiple line",)
 plt.xlabel("SPORTS")
 plt.ylabel("sCORE")
 plt.show()
-"""
+
 #labels and lines
 
 import matplotlib.pyplot as plt
@@ -53,4 +53,25 @@ plt.xlabel("SPORTS", fontdict= font2)
 
 plt.ylabel("sCORE", fontdict=font2)
 plt.plot(x1,y1)
+plt.show()
+"""
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x1=np.array([0,1,2,3])
+y1=np.array([3,8,1,10])
+
+font1={'family': 'serif','color': 'blue','size': 20}
+font2={'family': 'serif','color': 'darkred','size': 15}
+
+#plt.plot(x1, y1, marker='o', ms=10, mec='y', mfc='y', color='r', linewidth=2,linestyle='--')  # প্রথম লাইন
+
+plt.title("Multiple line",fontdict=font1,loc='left')
+
+plt.xlabel("SPORTS", fontdict= font2)
+
+plt.ylabel("sCORE", fontdict=font2)
+plt.plot(x1,y1)
+plt.grid(axis='y',linestyle='--',linewidth=0.5,color='r')
 plt.show()
