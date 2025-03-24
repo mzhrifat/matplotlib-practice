@@ -132,13 +132,18 @@ import numpy as np
 #day one,the age, and speed of the (n)cars
 x=np.array([5,7,8,7,2,17])
 y=np.array([99,86,87,88,111,86])
+
 plt.scatter(x,y)
+#add color
+plt.scatter(x,y,color='hotpink')
 
 #plot2
 #day two,the age,and speed of the cars
 x=np.array([2,3,6,1,8])
 y=np.array([20,22,25,28,30])
 
-plt.scatter(x,y)
+#plt.scatter(x,y)
+#add color
+plt.scatter(x,y,color='green')
 plt.show()
 
