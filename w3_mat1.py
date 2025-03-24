@@ -146,7 +146,7 @@ y=np.array([20,22,25,28,30])
 #add color
 plt.scatter(x,y,color='green')
 plt.show()
-"""
+
 
 #color each dot
 
@@ -179,5 +179,33 @@ plt.scatter(x,y,c=colors,s=sizes,alpha=0.5,cmap='nipy_spectral')
 plt.colorbar()
 
 plt.show()
+"""
 
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.array(["A","B","C","D"])
+y=np.array([4,8,2,10])
+
+#plt.bar(x,y)
+
+#add color
+#plt.bar(x,y,color="red")
+
+#horizontal line
+#plt.barh(x,y)
+
+#add width
+#plt.bar(x,y,width=0.2)
+
+#add height
+
+#plt.barh(x,y,height=0.1)
+
+#ADD color,width,height,horizontal
+
+plt.barh(x,y,color="green",height=0.1,)
+plt.bar(x,y,color="green",width=0.2)
+
+plt.show()
 
