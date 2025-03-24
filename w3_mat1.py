@@ -180,7 +180,7 @@ plt.colorbar()
 
 plt.show()
 """
-
+#BARS
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -209,3 +209,4 @@ plt.bar(x,y,color="green",width=0.2)
 
 plt.show()
 
+#HISTOGRAM COMMT
