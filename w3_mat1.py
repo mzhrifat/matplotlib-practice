@@ -208,7 +208,7 @@ plt.barh(x,y,color="green",height=0.1,)
 plt.bar(x,y,color="green",width=0.2)
 
 plt.show()
-"""
+
 #HISTOGRAM COMMT
 
 import matplotlib.pyplot as plt
@@ -227,4 +227,19 @@ plt.ylabel('Frequency')
 
 # Plot দেখানো
 plt.show()
+"""
 
+#Multiople histogram in one plot
+import matplotlib.pyplot as plt
+import numpy as np
+
+x=np.random.randn(1000)* 1.5 + 2
+y=np.random.randn(100) * 0.5 + 1
+
+plt.hist(x,bins=30,color='green',edgecolor='red')
+plt.hist(y,bins=5,color='hotpink',edgecolor='blue')
+
+plt.title("Multiple Histogram ")
+plt.xlabel("value")
+plt.ylabel("Frequency")
+plt.show()
