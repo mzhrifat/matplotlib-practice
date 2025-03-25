@@ -237,7 +237,7 @@ x=np.random.randn(1000)* 1.5 + 2
 y=np.random.randn(100) * 0.5 + 1
 
 plt.hist(x,bins=30,color='green',edgecolor='red')
-plt.hist(y,bins=5,color='hotpink',edgecolor='blue')
+plt.hist(y,bins=5 ,color='hotpink',edgecolor='blue')
 
 plt.title("Multiple Histogram ")
 plt.xlabel("value")
