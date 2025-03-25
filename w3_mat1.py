@@ -179,7 +179,7 @@ plt.scatter(x,y,c=colors,s=sizes,alpha=0.5,cmap='nipy_spectral')
 plt.colorbar()
 
 plt.show()
-"""
+
 #BARS
 import matplotlib.pyplot as plt
 import numpy as np
@@ -208,5 +208,23 @@ plt.barh(x,y,color="green",height=0.1,)
 plt.bar(x,y,color="green",width=0.2)
 
 plt.show()
-
+"""
 #HISTOGRAM COMMT
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Data set up (উদাহরণস্বরূপ র‍্যান্ডম ডেটা)
+data = np.random.randn(10)
+
+# Histogram plot করা
+plt.hist(data, bins=10, color='blue', edgecolor='black')
+
+# Title এবং labels যুক্ত করা
+plt.title('Histogram Example')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Plot দেখানো
+plt.show()
+
