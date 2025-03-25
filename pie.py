@@ -11,7 +11,7 @@ mycolors=["yellowgreen","green","hotpink","lightskyblue"]
 
 plt.pie(sizes,labels=mylabels,explode=myexplode,autopct='%1.1f%%',colors=mycolors,shadow=True)
 
-plt.legend(title="four fruits",loc="best")
+plt.legend(title="four fruits",loc="upper right",bbox_to_anchor=(1,1))
 
 plt.axis('equal')
 plt.show()
